@@ -1,0 +1,20 @@
+[project]
+name = "test-open-folder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "iaryanmittal", email = "aryanmittal203@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastmcp>=4.1.4",
+]
+
+[project.scripts]
+test-open-folder = "test_open_folder:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
